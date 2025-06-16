@@ -9,7 +9,7 @@ FROM $ROOT_IMAGE
 
 LABEL maintainer="Jupyter Project <jupyter@googlegroups.com>"
 ARG NB_USER="jovyan"
-ARG NB_UID="1000"
+ARG NB_UID="21000"
 ARG NB_GID="100"
 
 # Fix: https://github.com/hadolint/hadolint/wiki/DL4006
