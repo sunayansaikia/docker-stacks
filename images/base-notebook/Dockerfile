@@ -1,9 +1,9 @@
 # Copyright (c) Jupyter Development Team.
 # Distributed under the terms of the Modified BSD License.
-ARG REGISTRY=quay.io
-ARG OWNER=jupyter
+ARG REGISTRY=docker.io
+ARG OWNER=sunayansaikia
 ARG BASE_IMAGE=$REGISTRY/$OWNER/docker-stacks-foundation
-FROM $BASE_IMAGE
+FROM $BASE_IMAGE:ub22.04-py3.11
 
 LABEL maintainer="Jupyter Project <jupyter@googlegroups.com>"
 
