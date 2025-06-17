@@ -1,4 +1,4 @@
-name: Docker stack foundation builder
+name: base-notebook builder
 
 #on:
 #  push:
