@@ -34,6 +34,6 @@ jobs:
       run: cd images/base-notebook && docker build . --file Dockerfile --tag ${{secrets.DOCKER_USERNAME}}/base-notebook:ub22.04-py3.11
       #run: cd .github/workflows/pyspark-notebook && docker build . --file Dockerfile.py3.11-spark3.5.1-jl4 --tag ${{secrets.DOCKER_USER_TUSHAR}}/jupyter-pyspark-notebook:spark3.5.1-py3.11-u22.04-jl4-v14
     - name: Docker image push
-      run:  docker push ${{secrets.DOCKER_USERNAME}}/base-noteboom:ub22.04-py3.11
+      run:  docker push ${{secrets.DOCKER_USERNAME}}/base-notebook:ub22.04-py3.11
       #run:  docker push ${{secrets.DOCKER_USER_TUSHAR}}/jupyter-pyspark-notebook:park3.5.1-py3.11-u22.04-jl4-v14
       
